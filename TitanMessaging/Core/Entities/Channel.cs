@@ -18,6 +18,7 @@ namespace TitanMessaging.Core.Entities
 
         [Required]
         public string ChannelName { get; set; }
+        public DateTime LastActiveDate { get; set; }
 
         public virtual ICollection<UserChannel> UserChannels { get; set; }
         public virtual ICollection<Message> Messages { get; set; }
